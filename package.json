@@ -1,6 +1,6 @@
 {
   "name": "video-thumbnails-generator",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "video generator package",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
