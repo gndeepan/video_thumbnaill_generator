@@ -3,6 +3,8 @@ import {
   generateVideoThumbnails,
   getVideoDurationFromVideoFile,
   importFileandPreview,
+  generateVideoThumbnailViaUrl,
+  generateVideoDurationFromUrl,
 } from "./corona";
 
 const funcs = {
@@ -10,5 +12,7 @@ const funcs = {
   generateVideoThumbnails,
   getVideoDurationFromVideoFile,
   importFileandPreview,
+  generateVideoThumbnailViaUrl,
+  generateVideoDurationFromUrl,
 };
 export default funcs;
