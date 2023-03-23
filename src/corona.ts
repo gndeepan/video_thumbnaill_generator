@@ -92,7 +92,7 @@ export const generateVideoThumbnails = async (
     : new Promise(async (resolve, reject) => {
         await getVideoDurationFromVideoFile(videoFile).then(
           async (duration) => {
-            console.log("duration", duration);
+            // console.log("duration", duration);
             // divide the video timing into particular timestamps in respective to number of thumbnails
             // ex if time is 10 and numOfthumbnails is 4 then result will be -> 0, 2.5, 5, 7.5 ,10
             // we will use this timestamp to take snapshots
@@ -144,7 +144,7 @@ const getVideoThumbnail = (
   videoTimeInSeconds: number
 ): Promise<string> => {
   return new Promise((resolve, reject) => {
-    console.log(videoTimeInSeconds);
+    // console.log(videoTimeInSeconds);
 
     if ((file as File)?.type?.match("video")) {
       importFileandPreview(file as File).then((urlOfFIle) => {
@@ -221,7 +221,7 @@ export const getVideoCover = (
               };
             },
             "image/jpeg",
-            1 /* quality */
+            0 /* quality */
           );
         });
       });
